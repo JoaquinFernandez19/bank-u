@@ -1,0 +1,97 @@
+@mixin width() {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bank-container {
+  margin-top: 50px;
+  width: 100%;
+  height: calc(100vh-200px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Montaga', sans-serif;
+  .edit-icon {
+    align-self: center;
+    margin-top: 60px;
+    margin-left: 20px;
+    cursor: pointer;
+    &:hover {
+      color: red;
+    }
+  }
+  .icons {
+    font-size: 100px;
+  }
+  .cash {
+    @include width();
+  }
+  .digital {
+    @include width();
+  }
+  .total-money-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 50px 0;
+    width: 100%;
+    color: black;
+    h2 {
+      font-size: 200px;
+    }
+  }
+}
+.money-display {
+  margin-left: 20px;
+  font-size: 100px;
+
+  span {
+    font-size: 30px;
+  }
+}
+.money-input-wrapper {
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  backdrop-filter: blur(5px) brightness(20%);
+}
+.money-input-inner {
+  max-width: 400px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  height: 150px;
+  margin-bottom: 200px;
+  form {
+    display: flex;
+    flex-direction: column;
+    input {
+      font-size: 30px;
+      max-width: 250px;
+    }
+    .form-buttons {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 20px;
+      button {
+        padding: 0 20px;
+        cursor: pointer;
+      }
+      .form-icon {
+        font-size: 50px;
+      }
+    }
+  }
+}
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

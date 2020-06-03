@@ -49,7 +49,6 @@ const Form = ({ popUpError, submitLogin }) => {
 };
 
 const mapStateToProps = (state) => {
-  console.log(state);
   return {
     loginState: state.loginState,
   };
