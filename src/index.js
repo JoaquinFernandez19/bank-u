@@ -8,7 +8,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducers from './redux/reducers';
 //Routing
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 //localstorage
 const persistedStore = loadState();
 const store = createStore(reducers, persistedStore);
@@ -19,11 +19,11 @@ store.subscribe(() => {
 
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter>
+    <HashRouter>
       <div>
         <App />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   </Provider>,
   document.querySelector('#root')
 );
