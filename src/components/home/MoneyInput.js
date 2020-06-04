@@ -45,6 +45,7 @@ const MoneyInput = ({
             </button>
             <button
               onClick={() => {
+                setAmount(0);
                 closeChange();
                 hideModal();
               }}
@@ -62,6 +63,8 @@ const mapStateToProps = (state) => {
   console.log(state);
   return {
     changeModal: state.changeModal,
+    cash: state.cash,
+    digital: state.digial,
   };
 };
 

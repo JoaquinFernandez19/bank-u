@@ -5,6 +5,13 @@
   align-items: center;
   justify-content: center;
 }
+@mixin mobileWidth() {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 .bank-container {
   margin-top: 50px;
@@ -32,25 +39,25 @@
   .digital {
     @include width();
   }
-  .total-money-display {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    padding: 50px 0;
-    width: 100%;
-    color: black;
-    h2 {
-      font-size: 200px;
-    }
-  }
 }
+
 .money-display {
   margin-left: 20px;
   font-size: 100px;
-
   span {
     font-size: 30px;
+  }
+}
+.total-money-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 50px 0;
+  width: 100%;
+  color: black;
+  h2 {
+    font-size: 200px;
   }
 }
 .money-input-wrapper {
@@ -94,4 +101,27 @@ input[type='number']::-webkit-inner-spin-button,
 input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+@media (max-width: 515px) {
+  .bank-container {
+    .edit-icon {
+      margin: 0;
+    }
+    .cash {
+      @include mobileWidth();
+    }
+    .digital {
+      @include mobileWidth();
+    }
+  }
+
+  .total-money-display {
+    h2 {
+      font-size: 100px;
+    }
+  }
+  .money-display {
+    font-size: 80px;
+  }
 }
