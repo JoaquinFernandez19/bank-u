@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/bank-u/static/css/main.f2f2870e.chunk.css",
+    "main.js": "/bank-u/static/js/main.c4cb45f0.chunk.js",
+    "main.js.map": "/bank-u/static/js/main.c4cb45f0.chunk.js.map",
+    "runtime-main.js": "/bank-u/static/js/runtime-main.a2aed773.js",
+    "runtime-main.js.map": "/bank-u/static/js/runtime-main.a2aed773.js.map",
+    "static/js/2.c9c1c1a4.chunk.js": "/bank-u/static/js/2.c9c1c1a4.chunk.js",
+    "static/js/2.c9c1c1a4.chunk.js.map": "/bank-u/static/js/2.c9c1c1a4.chunk.js.map",
+    "index.html": "/bank-u/index.html",
+    "precache-manifest.2a39d595e2e15c8faea68ecf67906feb.js": "/bank-u/precache-manifest.2a39d595e2e15c8faea68ecf67906feb.js",
+    "service-worker.js": "/bank-u/service-worker.js",
+    "static/css/main.f2f2870e.chunk.css.map": "/bank-u/static/css/main.f2f2870e.chunk.css.map",
+    "static/js/2.c9c1c1a4.chunk.js.LICENSE.txt": "/bank-u/static/js/2.c9c1c1a4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a2aed773.js",
+    "static/js/2.c9c1c1a4.chunk.js",
+    "static/css/main.f2f2870e.chunk.css",
+    "static/js/main.c4cb45f0.chunk.js"
+  ]
+}
