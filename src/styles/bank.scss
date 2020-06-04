@@ -105,6 +105,7 @@ input[type='number']::-webkit-outer-spin-button {
 
 @media (max-width: 515px) {
   .bank-container {
+    margin-top: 10px;
     .edit-icon {
       margin: 0;
     }
@@ -113,6 +114,7 @@ input[type='number']::-webkit-outer-spin-button {
     }
     .digital {
       @include mobileWidth();
+      margin-bottom: 50px;
     }
   }
 
