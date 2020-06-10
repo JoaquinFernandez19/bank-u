@@ -1,15 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { formatter } from './formatter';
 
 const MoneyShow = (props) => {
   const moneyToShow = props.typeOf === 'cash' ? props.cash : props.digital;
 
   return (
     <div className="money-display">
-      <p>
-        <span>$U</span>
-        {moneyToShow}
-      </p>
+      <p>{formatter.format(parseInt(moneyToShow))}</p>
     </div>
   );
 };

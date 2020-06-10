@@ -6,8 +6,12 @@ import '../../styles/bank.scss';
 import Cash from './Cash';
 import Digital from './Digital';
 import MoneyInput from './MoneyInput';
+//Extra
+import { formatter } from './formatter';
 
 const Home = ({ loginState, cash, digital }) => {
+  const total = parseInt(parseInt(cash) + parseInt(digital));
+
   if (loginState) {
     return (
       <div className="bank-container">
@@ -16,10 +20,7 @@ const Home = ({ loginState, cash, digital }) => {
         <Digital />
         <div className="total-money-display">
           <h1>Total money</h1>
-          <h2>
-            <span style={{ fontSize: '30px' }}>$U</span>
-            {parseInt(cash) + parseInt(digital)}
-          </h2>
+          <h2>{formatter.format(total)}</h2>
         </div>
       </div>
     );
